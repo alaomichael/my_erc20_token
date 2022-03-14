@@ -6,50 +6,72 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "clientName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newGreeting",
+						"type": "string"
+					}
+				],
+				"name": "createGreeting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "getGreeting",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "myClientName",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "num",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tag",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
-			"methods": {
-				"retrieve()": {
-					"details": "Return value ",
-					"returns": {
-						"_0": "value of 'number'"
-					}
-				},
-				"store(uint256)": {
-					"details": "Store value in variable",
-					"params": {
-						"num": "value to store"
-					}
-				}
-			},
-			"title": "Storage",
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
@@ -75,11 +97,11 @@
 	},
 	"sources": {
 		"contracts/HelloWorld.sol": {
-			"keccak256": "0xa0e527a202b0b18719c53e3088f97f6b5f2c0ce9fea16d3e395e79382acad9dc",
+			"keccak256": "0xda43a95b1e3e612537af9d1d01715c750c79a1e981f5069ec22c95a8236cdfb0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://12ffd500d5ba7a116e7b286a35fe9f3767fc736c8e778c1849bd688278e1d8d8",
-				"dweb:/ipfs/QmVYF3D6A8Ayt5yTget15SLkKcsVSg4kdSKMNCPtNDJXJY"
+				"bzz-raw://6982402317b988c16de4fc4861717e06f731bc82528c4f10b796081fb9da97b8",
+				"dweb:/ipfs/QmbjWj61ugNtGHTUQxQTuZRR5m9FAK8tsDEWKS5nDfbtnn"
 			]
 		}
 	},
