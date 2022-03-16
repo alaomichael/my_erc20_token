@@ -1,3 +1,7 @@
-Account Address: 0xda0284267C944dBC4a457F7647E10d71C48f36Df
-
-Deployment Address: 0x3Aa32f6C8ae190B91B8683D19a4C9b7e25ACF3B5
+For the IPFS links, submit a link to the IPFS address, it should start with "ipfs.io".
+For the ERC29 and ERC721 tokens, submit your contracts etherscan address. All contracts must be verified
+Metadata structure : {
+name : // Any name,
+image : // URL to image on IPFS,
+description: // Some text
+}
