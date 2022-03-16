@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface IERC20 {
@@ -16,11 +17,11 @@ interface IERC20 {
 }
 
 
-contract MyERC20Token is IERC20 {
+contract SampleToken is IERC20 {
     using SafeMath for uint256;
 
-    string public constant name = "MyERC20Token";
-    string public constant symbol = "ATM";
+    string public constant name = "SampleToken";
+    string public constant symbol = "SMT";
     uint8 public constant decimals = 18;
 
     mapping(address => uint256) balances;
